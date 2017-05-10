@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+
+		<title>RandomNumberGame</title>
+
+
+	</head>
+
+<body>
+<p> How many fingers am I holding up? (1-5)</p>
+<p><input type = "text" id="NumberText"></p>
+<button id="Numberbutton">Enter</button>
+
+    <script type="text/javascript">
+
+document.getElementById("Numberbutton").onclick = function () {
+  var randomNumber = Math.random();
+  randomNumber = randomNumber * 6;
+  randomNumber = Math.floor(randomNumber);
+
+  if (document.getElementById("NumberText").value == randomNumber){
+
+    alert("You are good at guessing!");
+      }
+    else {
+    alert ("Nope, Please try again, the number was " + randomNumber);
+      }
+      }
+
+    </script>
+
+</body>
+
+
+
+
+
+</html>
